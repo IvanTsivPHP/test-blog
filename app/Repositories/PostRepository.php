@@ -19,7 +19,7 @@ class PostRepository implements PostRepositoryContract
 
     public function get(int $id): Post
     {
-        return Post::find($id);
+        return Post::findOrFail($id);
     }
 }
 
